@@ -6,13 +6,12 @@ from streamlit_folium import st_folium
 from math import radians, cos, sin, asin, sqrt
 from scipy.signal import butter, filtfilt
 
-url_acc = ""
-url_loc = ""
-df_acc = pd.read_csv('./Linear Accelerometer.csv')
-df_loc = pd.read_csv('./Location.csv')
+url_acc = "https://raw.githubusercontent.com/Niemistoo/streamlit-walk/refs/heads/main/Linear%20Accelerometer.csv"
+url_loc = "https://raw.githubusercontent.com/Niemistoo/streamlit-walk/refs/heads/main/Location.csv"
+df_acc = url_acc
+df_loc = url_loc
 
 st.title('Iltakävely')
-
 
 
 #SUODATETTU ASKELDATA
